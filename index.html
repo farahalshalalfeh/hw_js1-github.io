@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function myf(){
+      var x=parseInt(Math.random()*10)
+      var n=document.getElementById('num').value
+      if(n===x){
+        console.log(x)
+       document.getElementById('result').innerHTML='good work'}
+      else{
+        console.log(x)
+       document.getElementById('result').innerHTML='Not matched'}
+    
+    }
+      
+  </script>
+</head>
+<body>
+  <input type="number" max="10" min="1" id="num" >
+  <button onclick="myf()">check</button>
+  <h3 id="result"></h3>
+
+</body>
+</html>
